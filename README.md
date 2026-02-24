@@ -29,8 +29,8 @@ The table below is updated automatically by the [pipeline](.github/workflows/pip
 | c2ds-app-common | Bump downstream on release | ❌ Failed | 2026-02-09 12:51 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-02-22 21:38 |
 | c2ds-proforma | Build | ❌ Failed | 2026-02-24 02:00 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-02-24 15:57 |
-Updated: 2026-02-24 15:57:50 UTC
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-02-24 16:01 |
+Updated: 2026-02-24 16:02:42 UTC
 <!-- /WORKFLOW_STATUS_TABLE -->
 
 Full list and history: [statuses.md](statuses.md). For triggers and optional `GH_TOKEN` (PAT for private repos), see [Aggregate statuses](docs/aggregate-statuses.md). For manual badge setup, see [Static badges](docs/static-badges.md).
