@@ -88,22 +88,22 @@ class TestProfileReadme:
 
 
 class TestReadmeTable:
-    """Validate README.md table block (injected from statuses)."""
+    """Validate org profile README (profile/README.md) table block—the one the pipeline updates for the org Overview."""
 
     def test_readme_has_marker_block(self):
-        path = REPO_ROOT / "README.md"
+        path = REPO_ROOT / "profile" / "README.md"
         text = path.read_text(encoding="utf-8")
         assert "<!-- WORKFLOW_STATUS_TABLE -->" in text
         assert "<!-- /WORKFLOW_STATUS_TABLE -->" in text
 
     def test_readme_table_block_has_four_columns(self):
-        table = extract_table_from_readme(REPO_ROOT / "README.md")
-        assert table, "README should have content between table markers"
-        assert markdown_table_has_four_columns(table), "README table block must have 4 columns per row"
+        table = extract_table_from_readme(REPO_ROOT / "profile" / "README.md")
+        assert table, "profile/README.md should have content between table markers"
+        assert markdown_table_has_four_columns(table), "profile/README.md table must have 4 columns per row"
 
     def test_readme_table_block_has_separator(self):
-        table = extract_table_from_readme(REPO_ROOT / "README.md")
-        assert markdown_table_has_valid_separator(table), "README table block must have valid separator"
+        table = extract_table_from_readme(REPO_ROOT / "profile" / "README.md")
+        assert markdown_table_has_valid_separator(table), "profile/README.md table must have valid separator"
 
 
 class TestMarkdownTableHelpers:
