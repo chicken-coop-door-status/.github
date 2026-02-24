@@ -41,9 +41,11 @@ def inject_into_readme(readme_content: str, table_content: str) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Inject status table from statuses.md into README")
+    parser = argparse.ArgumentParser(
+        description="Inject status table from statuses.md into the org profile README (profile/README.md only)."
+    )
     parser.add_argument("--statuses", default="statuses.md", help="Path to statuses.md")
-    parser.add_argument("--readme", default="README.md", help="Path to README.md")
+    parser.add_argument("--readme", required=True, help="Path to org profile README (e.g. profile/README.md)")
     args = parser.parse_args()
 
     try:
@@ -63,6 +65,9 @@ def main() -> None:
     table = extract_table_from_statuses(statuses_content)
     new_readme = inject_into_readme(readme_content, table)
 
+    if "profile" not in args.readme or "README.md" not in args.readme:
+        print("::error::Must write to org profile README only (path must contain 'profile' and 'README.md'). Got: {!r}".format(args.readme), file=sys.stderr)
+        sys.exit(1)
     try:
         with open(args.readme, "w", encoding="utf-8") as f:
             f.write(new_readme)
