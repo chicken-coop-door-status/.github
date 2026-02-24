@@ -2,7 +2,11 @@
 
 One repo to rule them all...
 
-**Org Overview page:** The content on the organization’s main Overview tab comes from **[profile/README.md](profile/README.md)** in this repo. **If you see nothing on the org page:** the `.github` repo must be **public** (Settings → General → Danger Zone → Change visibility). See [docs/org-profile-readme.md](docs/org-profile-readme.md).
+> **Org Overview empty?** The org’s main page only shows content when this repo is **Public**.  
+> **Fix:** [Settings → General → Danger Zone → Change visibility → Public](https://github.com/chicken-coop-door-status/.github/settings).  
+> Details: [PROFILE_VISIBILITY_REQUIRED.md](PROFILE_VISIBILITY_REQUIRED.md) and [docs/org-profile-readme.md](docs/org-profile-readme.md).
+
+**Org Overview page:** Content comes from **[profile/README.md](profile/README.md)** in this repo (when the repo is public).
 
 ## Workflow statuses
 

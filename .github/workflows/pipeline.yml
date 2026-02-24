@@ -19,6 +19,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Require public repo for org Overview
+        run: |
+          PRIVATE=$(curl -s -H "Authorization: token ${{ secrets.GH_TOKEN || github.token }}" \
+            "https://api.github.com/repos/${{ github.repository }}" | jq -r '.private')
+          if [ "$PRIVATE" = "true" ]; then
+            echo "::error::Org Overview shows nothing because this repo is private. GitHub only displays profile/README.md when .github is PUBLIC."
+            echo "Fix: Settings → General → Danger Zone → Change repository visibility → Public"
+            exit 1
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
