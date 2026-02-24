@@ -73,6 +73,20 @@ class TestStatusesMd:
         assert re.search(r"Updated:\s*", text), "statuses.md should contain an Updated: line"
 
 
+class TestProfileReadme:
+    """Validate profile/README.md (shown on org Overview page)."""
+
+    def test_profile_readme_exists(self):
+        path = REPO_ROOT / "profile" / "README.md"
+        assert path.is_file(), "profile/README.md should exist (org Overview uses it)"
+
+    def test_profile_readme_has_marker_block(self):
+        path = REPO_ROOT / "profile" / "README.md"
+        text = path.read_text(encoding="utf-8")
+        assert "<!-- WORKFLOW_STATUS_TABLE -->" in text
+        assert "<!-- /WORKFLOW_STATUS_TABLE -->" in text
+
+
 class TestReadmeTable:
     """Validate README.md table block (injected from statuses)."""
 

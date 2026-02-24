@@ -1,18 +1,24 @@
 # Aggregate Workflow Statuses
 
-The [Aggregate Workflow Statuses](../.github/workflows/pipeline.yml) workflow collects the latest run status of every GitHub Actions workflow in every repository in the organization and writes them to [statuses.md](../statuses.md).
+The [pipeline](.github/workflows/pipeline.yml) collects the latest run status of every GitHub Actions workflow in every repository in the organization and writes them to [statuses.md](../statuses.md). It also updates the table in [profile/README.md](../profile/README.md), which is what appears on the **organization’s Overview page**.
+
+## Org Overview (profile README)
+
+- **What shows on the org main page:** GitHub uses the file **`profile/README.md`** in this repo, not the repo root `README.md`.
+- **Visibility:** The **`.github` repository must be public** for the org profile README to appear on the Overview tab. If `.github` is private, the Overview page will not show any README.
 
 ## Triggers
 
-- **Schedule:** runs hourly (cron `0 * * * *`). To change the schedule, edit the `schedule` section in `.github/workflows/pipeline.yml`.
-- **Manual:** run from the Actions tab via **Workflow dispatch**.
+- **Push:** runs on every push to `main` (so you see a run after each merge).
+- **Schedule:** runs hourly (cron `0 * * * *`). To change it, edit `.github/workflows/pipeline.yml`.
+- **Manual:** run from the Actions tab via **Run workflow** (workflow_dispatch).
 
-## Authentication
+## Authentication (private / internal repos)
 
-- **Default:** The job uses `GITHUB_TOKEN`, which can list and read workflows only for repositories the token has access to within the org.
-- **Private repos:** To include private organization repositories, add a [Personal Access Token](https://github.com/settings/tokens) with scopes `repo` and `admin:org` (read org and repos), and store it as a **repository secret** named `GH_TOKEN`. The workflow uses `GH_TOKEN` when set, otherwise `GITHUB_TOKEN`.
+- **Required for private repos:** The default `GITHUB_TOKEN` cannot list other private repos in the org. You **must** add a [Personal Access Token](https://github.com/settings/tokens) with scopes `repo` and `admin:org` (read org and repos) and store it as a **repository secret** named **`GH_TOKEN`**. The workflow uses `GH_TOKEN` when set; otherwise it uses `GITHUB_TOKEN` (which will not see other private repos).
+- After adding `GH_TOKEN`, trigger a run via **Actions → Aggregate Workflow Statuses → Run workflow** to populate the status table.
 
 ## Output
 
-- **File:** `statuses.md` in the repository root (generated; do not edit by hand).
-- **Content:** Markdown table with columns: Repository, Workflow, Status (✅ Passed / ❌ Failed), Last Run. A trailing “Updated: …” line records the last run time.
+- **statuses.md** (repo root): full table (generated; do not edit by hand).
+- **README.md** (repo root) and **profile/README.md**: same table injected between the marker comments. Only **profile/README.md** is shown on the org Overview page.

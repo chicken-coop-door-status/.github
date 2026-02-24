@@ -3,6 +3,8 @@
 name: Aggregate Workflow Statuses
 
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: '0 * * * *'  # Hourly; adjust in this file if needed
   workflow_dispatch:
@@ -35,11 +37,13 @@ jobs:
         run: python scripts/aggregate_workflow_statuses.py
 
       - name: Inject status table into README
-        run: python scripts/inject_status_table_into_readme.py
+        run: |
+          python scripts/inject_status_table_into_readme.py
+          python scripts/inject_status_table_into_readme.py --readme profile/README.md
 
       - name: Commit and push updates
         run: |
           git config --global user.name 'Status Aggregator Bot'
           git config --global user.email 'status-bot@users.noreply.github.com'
-          git add statuses.md README.md
+          git add statuses.md README.md profile/README.md
           git diff --staged --quiet || (git commit -m 'chore: update workflow statuses' && git push)
