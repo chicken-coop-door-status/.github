@@ -7,6 +7,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scripts.inject_status_table_into_readme import (
+    append_build_link,
     extract_table_from_statuses,
     inject_into_readme,
 )
@@ -39,6 +40,18 @@ Updated: 2025-02-24
     out = extract_table_from_statuses(content)
     assert "*Generated" not in out
     assert "Updated: 2025-02-24" in out
+
+
+def test_append_build_link_adds_link():
+    table = "| A | B | C | D |\nUpdated: 2025-02-24 12:00 UTC"
+    out = append_build_link(table, "https://github.com/org/repo/actions/runs/123")
+    assert "Updated: 2025-02-24 12:00 UTC ([build](https://github.com/org/repo/actions/runs/123))" in out
+
+
+def test_append_build_link_empty_url_unchanged():
+    table = "| A | B | C | D |\nUpdated: now"
+    assert append_build_link(table, None) == table
+    assert append_build_link(table, "") == table
 
 
 def test_inject_into_readme_replaces_between_markers():

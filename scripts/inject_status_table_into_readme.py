@@ -30,6 +30,18 @@ def extract_table_from_statuses(content: str) -> str:
     return "\n".join(kept).strip()
 
 
+def append_build_link(table_content: str, run_url: str | None) -> str:
+    """If run_url is set, append ' ([build](url))' to the Updated line. Pure for testing."""
+    if not run_url or not run_url.strip():
+        return table_content
+    url = run_url.strip()
+
+    def repl(match: re.Match) -> str:
+        return match.group(1) + " ([build](" + url + "))" + match.group(2)
+
+    return re.sub(r"^(Updated:.*?)(\r?\n|$)", repl, table_content, count=1, flags=re.MULTILINE)
+
+
 def inject_into_readme(readme_content: str, table_content: str) -> str:
     """Replace content between markers in README with table_content. Pure for testing."""
     pattern = re.compile(
@@ -46,6 +58,7 @@ def main() -> None:
     )
     parser.add_argument("--statuses", default="statuses.md", help="Path to statuses.md")
     parser.add_argument("--readme", required=True, help="Path to org profile README (e.g. profile/README.md)")
+    parser.add_argument("--run-url", default=None, help="URL of this workflow run to link as 'build'")
     args = parser.parse_args()
 
     try:
@@ -63,6 +76,7 @@ def main() -> None:
         sys.exit(1)
 
     table = extract_table_from_statuses(statuses_content)
+    table = append_build_link(table, getattr(args, "run_url", None))
     new_readme = inject_into_readme(readme_content, table)
 
     if "profile" not in args.readme or "README.md" not in args.readme:

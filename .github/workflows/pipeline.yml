@@ -50,8 +50,9 @@ jobs:
       - name: Inject status table into org profile README only
         run: |
           ORG_README="${{ github.workspace }}/profile/README.md"
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           echo "Writing to org profile README: $ORG_README"
-          python scripts/inject_status_table_into_readme.py --readme "$ORG_README"
+          python scripts/inject_status_table_into_readme.py --readme "$ORG_README" --run-url "$RUN_URL"
 
       - name: Commit and push updates
         run: |
