@@ -2,7 +2,7 @@
 
 One repo to rule them all...
 
-**Org Overview page:** The content shown on the organization’s main Overview tab comes from **[profile/README.md](profile/README.md)** in this repo. The `.github` repo must be **public** for that profile README to be visible.
+**Org Overview page:** The content on the organization’s main Overview tab comes from **[profile/README.md](profile/README.md)** in this repo. **If you see nothing on the org page:** the `.github` repo must be **public** (Settings → General → Danger Zone → Change visibility). See [docs/org-profile-readme.md](docs/org-profile-readme.md).
 
 ## Workflow statuses
 

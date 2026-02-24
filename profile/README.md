@@ -2,6 +2,8 @@
 
 CI status across organization repositories (updated by the [pipeline](.github/workflows/pipeline.yml)).
 
+*This file is shown on the org Overview only when the `.github` repository is set to **Public**.*
+
 <!-- WORKFLOW_STATUS_TABLE -->
 | Repository | Workflow | Status | Last Run |
 |------------|----------|--------|----------|
