@@ -1,10 +1,10 @@
 # Aggregate Workflow Statuses
 
-The [Aggregate Workflow Statuses](../.github/workflows/aggregate-statuses.yml) workflow collects the latest run status of every GitHub Actions workflow in every repository in the organization and writes them to [statuses.md](../statuses.md).
+The [Aggregate Workflow Statuses](../.github/workflows/pipeline.yml) workflow collects the latest run status of every GitHub Actions workflow in every repository in the organization and writes them to [statuses.md](../statuses.md).
 
 ## Triggers
 
-- **Schedule:** runs hourly (cron `0 * * * *`). To change the schedule, edit the `schedule` section in `.github/workflows/aggregate-statuses.yml`.
+- **Schedule:** runs hourly (cron `0 * * * *`). To change the schedule, edit the `schedule` section in `.github/workflows/pipeline.yml`.
 - **Manual:** run from the Actions tab via **Workflow dispatch**.
 
 ## Authentication

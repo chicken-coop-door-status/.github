@@ -4,6 +4,12 @@ One repo to rule them all...
 
 ## Workflow statuses
 
-See [workflow statuses](statuses.md) for an at-a-glance overview of CI across the organization. The table is updated automatically by the [Aggregate Workflow Statuses](.github/workflows/aggregate-statuses.yml) workflow (hourly and on demand). For triggers and optional `GH_TOKEN` (PAT for private repos), see [Aggregate statuses](docs/aggregate-statuses.md).
+The table below is updated automatically by the [Aggregate Workflow Statuses](.github/workflows/pipeline.yml) workflow (hourly and on demand).
 
-For manual badge setup in READMEs, see [Static badges](docs/static-badges.md).
+<!-- WORKFLOW_STATUS_TABLE -->
+| Repository | Workflow | Status | Last Run |
+|------------|----------|--------|----------|
+Updated: —
+<!-- /WORKFLOW_STATUS_TABLE -->
+
+Full list and history: [statuses.md](statuses.md). For triggers and optional `GH_TOKEN` (PAT for private repos), see [Aggregate statuses](docs/aggregate-statuses.md). For manual badge setup, see [Static badges](docs/static-badges.md).
