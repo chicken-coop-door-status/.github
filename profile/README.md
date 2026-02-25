@@ -25,7 +25,7 @@ CI status across organization repositories (updated by the [pipeline](.github/wo
 | c2ds-app-common | Bump downstream on release | ❌ Failed | 2026-02-09 12:51 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-02-22 21:38 |
 | c2ds-proforma | Build | ❌ Failed | 2026-02-24 02:00 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-02-25 16:23 |
-| .github | CodeQL | ✅ Passed | 2026-02-25 15:19 |
-Updated: 2026-02-25 16:24:16 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/22405769427))
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-02-25 17:21 |
+| .github | CodeQL | ✅ Passed | 2026-02-25 16:24 |
+Updated: 2026-02-25 17:22:42 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/22407972362))
 <!-- /WORKFLOW_STATUS_TABLE -->
