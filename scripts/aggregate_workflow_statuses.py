@@ -82,32 +82,39 @@ def collect_rows_from_org(org_name: str, token: str) -> list[str]:
 
 
 def _rows_for_repo(repo) -> list[str]:
-    """Fetch workflow runs for one repo; return list of table rows."""
-    rows: list[str] = []
+    """Fetch workflow runs for one repo; return at most one row (latest run)."""
     try:
         workflows = repo.get_workflows()
     except Exception:
-        return rows
+        return []
+
+    latest_run = None
+    latest_workflow_name = None
+    latest_created = None
+    first_workflow_name = None
 
     for workflow in workflows:
+        if first_workflow_name is None:
+            first_workflow_name = workflow.name
         try:
             runs = workflow.get_runs().get_page(0)
             if runs:
                 run = runs[0]
-                row = row_from_run(
-                    repo.name,
-                    workflow.name,
-                    run.conclusion,
-                    run.created_at,
-                )
-                rows.append(row)
-            else:
-                row = row_from_run(repo.name, workflow.name, None, None)
-                rows.append(row)
+                created = run.created_at
+                if latest_created is None or (created and created > latest_created):
+                    latest_created = created
+                    latest_run = run
+                    latest_workflow_name = workflow.name
         except Exception as e:
             print(f"  {repo.name} / {workflow.name}: {e}", file=sys.stderr)
 
-    return rows
+    name = latest_workflow_name or first_workflow_name
+    if name is None:
+        return []
+    conclusion = latest_run.conclusion if latest_run else None
+    created_at = latest_run.created_at if latest_run else None
+    row = row_from_run(repo.name, name, conclusion, created_at)
+    return [row]
 
 
 def main() -> None:
