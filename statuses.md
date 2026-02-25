@@ -20,7 +20,7 @@
 | c2ds-app-common | Bump downstream on release | ❌ Failed | 2026-02-09 12:51 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-02-22 21:38 |
 | c2ds-proforma | Build | ❌ Failed | 2026-02-24 02:00 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-02-25 01:32 |
-| .github | CodeQL | ✅ Passed | 2026-02-25 00:15 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-02-25 02:58 |
+| .github | CodeQL | ✅ Passed | 2026-02-25 01:33 |
 
-Updated: 2026-02-25 01:33:15 UTC
+Updated: 2026-02-25 02:59:33 UTC
