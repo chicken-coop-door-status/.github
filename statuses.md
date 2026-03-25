@@ -10,10 +10,10 @@
 | c2ds-cognator | pipeline | ✅ Passed | 2026-03-23 12:22 |
 | esp-web-tools | CodeQL | ✅ Passed | 2026-03-23 17:04 |
 | ESPConnect | CodeQL | ✅ Passed | 2026-03-22 15:12 |
-| c2ds-brood | Pipeline | ⏳ Running | 2026-03-25 17:09 |
+| c2ds-brood | Pipeline | ✅ Passed | 2026-03-25 17:51 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-03-01 21:29 |
 | c2ds-proforma | Build | ❌ Failed | 2026-02-24 02:00 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-03-25 17:21 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-03-25 18:17 |
 | c2ds-mailchimp | Pipeline | ❌ Failed | 2026-03-11 00:26 |
 
-Updated: 2026-03-25 17:22:30 UTC
+Updated: 2026-03-25 18:17:58 UTC
