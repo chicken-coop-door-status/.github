@@ -15,10 +15,10 @@ CI status across organization repositories (updated by the [pipeline](.github/wo
 | c2ds-cognator | pipeline | ✅ Passed | 2026-03-27 18:13 |
 | esp-web-tools | CodeQL | ✅ Passed | 2026-03-30 17:04 |
 | ESPConnect | CodeQL | ✅ Passed | 2026-03-29 15:12 |
-| c2ds-brood | Pipeline | ✅ Passed | 2026-03-31 21:06 |
+| c2ds-brood | Pipeline | ✅ Passed | 2026-03-31 22:29 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-03-31 20:50 |
 | c2ds-proforma | Build | ❌ Failed | 2026-02-24 02:00 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-03-31 22:12 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-03-31 23:07 |
 | c2ds-mailchimp | Pipeline | ❌ Failed | 2026-03-11 00:26 |
-Updated: 2026-03-31 22:13:10 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/23821865307))
+Updated: 2026-03-31 23:08:38 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/23823653644))
 <!-- /WORKFLOW_STATUS_TABLE -->
