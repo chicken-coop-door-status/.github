@@ -13,7 +13,8 @@
 | c2ds-brood | Pipeline | ✅ Passed | 2026-04-03 10:38 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-04-03 10:38 |
 | c2ds-proforma | Build | ❌ Failed | 2026-04-05 08:42 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-04-05 17:07 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-04-05 18:07 |
 | c2ds-mailchimp | Pipeline | ❌ Failed | 2026-03-11 00:26 |
+| c2ds-register-website | Deploy to S3 | ❌ Failed | 2026-04-05 18:07 |
 
-Updated: 2026-04-05 17:08:38 UTC
+Updated: 2026-04-05 18:08:24 UTC
