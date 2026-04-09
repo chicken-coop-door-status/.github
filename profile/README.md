@@ -18,8 +18,8 @@ CI status across organization repositories (updated by the [pipeline](.github/wo
 | c2ds-brood | Pipeline | ✅ Passed | 2026-04-06 13:58 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-04-03 10:38 |
 | c2ds-proforma | Build | ❌ Failed | 2026-04-05 08:42 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-04-09 12:16 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-04-09 13:31 |
 | c2ds-mailchimp | Pipeline | ❌ Failed | 2026-03-11 00:26 |
 | c2ds-register-website | Deploy to S3 | ✅ Passed | 2026-04-09 11:31 |
-Updated: 2026-04-09 12:17:52 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/24189677346))
+Updated: 2026-04-09 13:32:05 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/24192924447))
 <!-- /WORKFLOW_STATUS_TABLE -->
