@@ -2,7 +2,7 @@
 
 | Repository | Workflow | Status | Last Run |
 |------------|----------|--------|----------|
-| c2ds-bootstrap | Pipeline (Build → Test → Deploy) | ✅ Passed | 2026-04-10 18:24 |
+| c2ds-bootstrap | Pipeline (Build → Test → Deploy) | ✅ Passed | 2026-04-14 13:17 |
 | c2ds-mobile-app | Pipeline | ✅ Passed | 2026-04-03 13:51 |
 | c2ds-door-sensor-assignments | Update IoT Device Shadows | ❌ Failed | 2026-02-11 23:41 |
 | c2ds-api | Deploy SAM App | ✅ Passed | 2026-04-12 08:06 |
@@ -13,9 +13,9 @@
 | c2ds-brood | Pipeline | ✅ Passed | 2026-04-10 18:24 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-04-03 10:38 |
 | c2ds-proforma | Build | ❌ Failed | 2026-04-05 08:42 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-04-14 12:17 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-04-14 13:31 |
 | c2ds-mailchimp | Pipeline | ❌ Failed | 2026-03-11 00:26 |
 | c2ds-register-website | Deploy to S3 | ✅ Passed | 2026-04-10 16:23 |
 | c2ds-portal | CI | ✅ Passed | 2026-04-12 09:51 |
 
-Updated: 2026-04-14 12:18:49 UTC
+Updated: 2026-04-14 13:32:28 UTC
