@@ -7,20 +7,20 @@ CI status across organization repositories (updated by the [pipeline](.github/wo
 <!-- WORKFLOW_STATUS_TABLE -->
 | Repository | Workflow | Status | Last Run |
 |------------|----------|--------|----------|
-| c2ds-bootstrap | Pipeline (Build → Test → Deploy) | ✅ Passed | 2026-04-14 13:17 |
+| c2ds-bootstrap | Pipeline (Build → Test → Deploy) | ✅ Passed | 2026-04-15 02:20 |
 | c2ds-mobile-app | Pipeline | ✅ Passed | 2026-04-03 13:51 |
 | c2ds-door-sensor-assignments | Update IoT Device Shadows | ❌ Failed | 2026-02-11 23:41 |
-| c2ds-api | Deploy SAM App | ✅ Passed | 2026-04-14 16:18 |
+| c2ds-api | Deploy SAM App | ✅ Passed | 2026-04-15 02:04 |
 | c2ds-lambdas | Pipeline (Safety → Deploy) | ✅ Passed | 2026-04-10 10:01 |
 | c2ds-cognator | pipeline | ✅ Passed | 2026-04-03 13:44 |
 | esp-web-tools | CodeQL | ✅ Passed | 2026-04-13 17:03 |
 | ESPConnect | CodeQL | ✅ Passed | 2026-04-12 15:12 |
-| c2ds-brood | Pipeline | ✅ Passed | 2026-04-15 01:06 |
+| c2ds-brood | Pipeline | ✅ Passed | 2026-04-15 02:20 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-04-03 10:38 |
 | c2ds-proforma | Build | ❌ Failed | 2026-04-05 08:42 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-04-15 01:32 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-04-15 03:01 |
 | c2ds-mailchimp | Pipeline | ❌ Failed | 2026-03-11 00:26 |
 | c2ds-register-website | Deploy to S3 | ✅ Passed | 2026-04-10 16:23 |
-| c2ds-portal | CI | ✅ Passed | 2026-04-15 01:26 |
-Updated: 2026-04-15 01:33:00 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/24431740461))
+| c2ds-portal | CI | ✅ Passed | 2026-04-15 01:52 |
+Updated: 2026-04-15 03:02:02 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/24434147155))
 <!-- /WORKFLOW_STATUS_TABLE -->
