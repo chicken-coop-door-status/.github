@@ -12,10 +12,10 @@
 | ESPConnect | CodeQL | ✅ Passed | 2026-04-19 15:12 |
 | c2ds-brood | Pipeline | ✅ Passed | 2026-04-20 00:15 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-04-16 19:12 |
-| c2ds-proforma | Build | ❌ Failed | 2026-04-19 16:05 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-04-20 17:22 |
+| c2ds-proforma | Build | ❌ Failed | 2026-04-20 17:48 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-04-20 18:17 |
 | c2ds-mailchimp | Pipeline | ❌ Failed | 2026-03-11 00:26 |
 | c2ds-register-website | Deploy to S3 | ✅ Passed | 2026-04-10 16:23 |
 | c2ds-portal | CI | ✅ Passed | 2026-04-15 20:43 |
 
-Updated: 2026-04-20 17:22:50 UTC
+Updated: 2026-04-20 18:18:27 UTC
