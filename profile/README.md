@@ -7,15 +7,15 @@ CI status across organization repositories (updated by the [pipeline](.github/wo
 <!-- WORKFLOW_STATUS_TABLE -->
 | Repository | Workflow | Status | Last Run |
 |------------|----------|--------|----------|
-| c2ds-bootstrap | Pipeline (Build → Test → Deploy) | ✅ Passed | 2026-04-21 23:57 |
+| c2ds-bootstrap | Pipeline (Build → Test → Deploy) | ✅ Passed | 2026-04-22 19:32 |
 | c2ds-mobile-app | Pipeline | ✅ Passed | 2026-04-03 13:51 |
 | c2ds-api | Deploy SAM App | ✅ Passed | 2026-04-22 03:25 |
-| c2ds-lambdas | Pipeline (Safety → Deploy) | ✅ Passed | 2026-04-22 00:20 |
-| c2ds-cognator | pipeline | ✅ Passed | 2026-04-22 19:21 |
-| c2ds-brood | Pipeline | ✅ Passed | 2026-04-22 18:41 |
+| c2ds-lambdas | Pipeline (Safety → Deploy) | ✅ Passed | 2026-04-22 19:48 |
+| c2ds-cognator | pipeline | ✅ Passed | 2026-04-22 19:28 |
+| c2ds-brood | Pipeline | ✅ Passed | 2026-04-22 19:45 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-04-21 03:01 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-04-22 19:28 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-04-22 20:17 |
 | c2ds-mailchimp | Pipeline | ❌ Failed | 2026-03-11 00:26 |
 | c2ds-portal | CI | ✅ Passed | 2026-04-15 20:43 |
-Updated: 2026-04-22 19:28:47 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/24798272068))
+Updated: 2026-04-22 20:18:34 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/24800510170))
 <!-- /WORKFLOW_STATUS_TABLE -->
