@@ -13,7 +13,7 @@ CI status across organization repositories (updated by the [pipeline](.github/wo
 | c2ds-cognator | pipeline | ✅ Passed | 2026-04-30 16:01 |
 | c2ds-brood | Pipeline | ✅ Passed | 2026-05-02 02:28 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-05-01 10:23 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-05-02 06:36 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-05-02 07:31 |
 | c2ds-portal | CI | ✅ Passed | 2026-05-01 23:27 |
-Updated: 2026-05-02 06:36:45 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/25245945183))
+Updated: 2026-05-02 07:31:42 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/25246915500))
 <!-- /WORKFLOW_STATUS_TABLE -->
