@@ -8,12 +8,12 @@ CI status across organization repositories (updated by the [pipeline](.github/wo
 | Repository | Workflow | Status | Last Run |
 |------------|----------|--------|----------|
 | c2ds-bootstrap | Pipeline (Build → Test → Deploy) | ✅ Passed | 2026-05-06 12:27 |
-| c2ds-api | Deploy SAM App | ✅ Passed | 2026-05-04 15:25 |
+| c2ds-api | Deploy SAM App | ✅ Passed | 2026-05-07 11:22 |
 | c2ds-lambdas | Pipeline (Safety → Deploy) | ✅ Passed | 2026-05-06 21:58 |
 | c2ds-cognator | pipeline | ✅ Passed | 2026-05-06 11:12 |
 | c2ds-brood | Pipeline | ✅ Passed | 2026-05-06 22:02 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-05-05 16:10 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-05-07 10:43 |
-| c2ds-portal | e2e | ✅ Passed | 2026-05-05 19:02 |
-Updated: 2026-05-07 10:44:01 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/25491026595))
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-05-07 11:32 |
+| c2ds-portal | e2e | ✅ Passed | 2026-05-07 11:26 |
+Updated: 2026-05-07 11:33:29 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/25493224411))
 <!-- /WORKFLOW_STATUS_TABLE -->
