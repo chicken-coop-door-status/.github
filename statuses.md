@@ -6,9 +6,9 @@
 | c2ds-api | Deploy SAM App | ✅ Passed | 2026-05-08 01:09 |
 | c2ds-lambdas | Pipeline (Safety → Deploy) | ✅ Passed | 2026-05-08 00:39 |
 | c2ds-cognator | pipeline | ✅ Passed | 2026-05-08 01:20 |
-| c2ds-brood | Pipeline | ⏳ Running | 2026-05-08 01:20 |
+| c2ds-brood | Pipeline | ✅ Passed | 2026-05-08 01:47 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-05-05 16:10 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-05-08 01:33 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-05-08 03:01 |
 | c2ds-portal | e2e | ✅ Passed | 2026-05-08 01:32 |
 
-Updated: 2026-05-08 01:34:28 UTC
+Updated: 2026-05-08 03:02:30 UTC
