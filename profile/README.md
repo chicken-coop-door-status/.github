@@ -8,15 +8,15 @@ CI status across organization repositories (updated by the [pipeline](.github/wo
 | Repository | Workflow | Status | Last Run |
 |------------|----------|--------|----------|
 | c2ds-bootstrap | Pipeline (Build → Test → Deploy) | ✅ Passed | 2026-05-23 00:31 |
-| c2ds-api | Deploy SAM App | ✅ Passed | 2026-05-24 23:52 |
+| c2ds-api | Deploy SAM App | ✅ Passed | 2026-05-25 14:02 |
 | c2ds-lambdas | Pipeline (Safety → Deploy) | ✅ Passed | 2026-05-24 17:26 |
-| c2ds-cognator | pipeline | ✅ Passed | 2026-05-25 10:04 |
-| c2ds-brood | Pipeline | ✅ Passed | 2026-05-24 18:37 |
+| c2ds-cognator | pipeline | ✅ Passed | 2026-05-25 14:20 |
+| c2ds-brood | Pipeline | ⏳ Running | 2026-05-25 14:53 |
 | c2ds-app-common | Pipeline | ❌ Failed | 2026-05-22 18:19 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-05-25 13:04 |
-| c2ds-portal | e2e | ✅ Passed | 2026-05-25 13:03 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-05-25 15:00 |
+| c2ds-portal | e2e | ✅ Passed | 2026-05-25 14:15 |
 | c2ds-docs-website | Deploy to S3 | ✅ Passed | 2026-05-15 16:44 |
 | c2ds-platform-cdk | CI | ✅ Passed | 2026-05-22 09:06 |
 | c2ds-crash-interpreter | Deploy crash-decoder | ✅ Passed | 2026-05-24 17:02 |
-Updated: 2026-05-25 13:05:06 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/26401962410))
+Updated: 2026-05-25 15:00:48 UTC ([build](https://github.com/chicken-coop-door-status/.github/actions/runs/26406837540))
 <!-- /WORKFLOW_STATUS_TABLE -->
