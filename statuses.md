@@ -8,10 +8,10 @@
 | c2ds-cognator | pipeline | ✅ Passed | 2026-05-27 12:22 |
 | c2ds-brood | Pipeline | ❌ Failed | 2026-05-27 15:47 |
 | c2ds-app-common | Pipeline | ❌ Failed | 2026-05-22 18:19 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-05-27 18:42 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-05-27 19:40 |
 | c2ds-portal | e2e | ✅ Passed | 2026-05-26 22:57 |
 | c2ds-docs-website | Deploy to S3 | ✅ Passed | 2026-05-15 16:44 |
 | c2ds-platform-cdk | CI | ✅ Passed | 2026-05-22 09:06 |
 | c2ds-crash-interpreter | Deploy crash-decoder | ✅ Passed | 2026-05-24 17:02 |
 
-Updated: 2026-05-27 18:43:29 UTC
+Updated: 2026-05-27 19:40:40 UTC
