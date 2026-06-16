@@ -2,16 +2,16 @@
 
 | Repository | Workflow | Status | Last Run |
 |------------|----------|--------|----------|
-| c2ds-bootstrap | Pipeline (Build → Test → Deploy) | ✅ Passed | 2026-06-15 20:47 |
+| c2ds-bootstrap | Pipeline (Build → Test → Deploy) | ✅ Passed | 2026-06-16 14:48 |
 | c2ds-api | Deploy SAM App | ✅ Passed | 2026-06-02 12:38 |
-| c2ds-lambdas | Pipeline (Safety → Deploy) | ✅ Passed | 2026-06-10 00:35 |
+| c2ds-lambdas | Pipeline (Safety → Deploy) | ✅ Passed | 2026-06-16 13:44 |
 | c2ds-cognator | pipeline | ✅ Passed | 2026-06-15 01:33 |
-| c2ds-brood | Pipeline | ❌ Failed | 2026-06-15 20:47 |
+| c2ds-brood | Pipeline | ❌ Failed | 2026-06-16 14:48 |
 | c2ds-app-common | Pipeline | ✅ Passed | 2026-05-28 02:47 |
-| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-06-16 13:36 |
+| .github | Aggregate Workflow Statuses | ⏳ Running | 2026-06-16 15:37 |
 | c2ds-portal | e2e | ✅ Passed | 2026-06-12 20:58 |
 | c2ds-docs-website | Deploy to S3 | ✅ Passed | 2026-05-15 16:44 |
 | c2ds-platform-cdk | CI | ✅ Passed | 2026-05-22 09:06 |
 | c2ds-crash-interpreter | Deploy crash-decoder | ✅ Passed | 2026-05-24 17:02 |
 
-Updated: 2026-06-16 13:37:10 UTC
+Updated: 2026-06-16 15:38:33 UTC
